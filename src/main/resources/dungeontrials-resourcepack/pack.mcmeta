@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "Dungeon Trials language pack",
+    "min_format": [
+      65,
+      0
+    ],
+    "max_format": [
+      84,
+      0
+    ]
+  }
+}

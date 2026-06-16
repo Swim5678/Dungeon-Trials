@@ -1,0 +1,9 @@
+name: DungeonTrials
+version: '${version}'
+
+main: org.swim.dungeonTrials.DungeonTrials
+loader: org.swim.dungeonTrials.DungeonTrialsLoader
+api-version: '26.1.2'
+load: POSTWORLD
+
+authors: [ Swim ]

@@ -1,0 +1,177 @@
+missing: "<red>Missing message: {key}</red>"
+
+command:
+  player-only: "<red>Only players can use this command."
+  invalid-level: "<red>Level must be between 1 and 5."
+  invalid-number: "<red>Invalid level number."
+  not-in-dungeon: "<red>You are not in a dungeon."
+  no-permission: "<red>You do not have permission to use this command."
+  visitor-warning: "<yellow>You are in another player's dungeon. Creating your own..."
+  unknown-structure: "<red>Unknown structure: {structure}. Available: {available}."
+  start:
+    is-visiting: "<red>You are visiting another dungeon. Use /dt leave first."
+    already-in-dungeon: "<red>You are already in a dungeon. Use /dt next [level] to change level."
+    already-in-region: "<red>You are already a member of {owner}'s dungeon. Use /dt leave first."
+  next:
+    is-visiting: "<red>You are visiting another dungeon. Use /dt leave first."
+    not-in-dungeon: "<red>You are not in a dungeon. Use /dt start [level] first."
+    not-owner: "<red>You are not the dungeon owner. Only {owner} can change levels."
+    must-be-higher: "<red>You can only advance levels. Current: {current}, next: {next}.</red>"
+  invite:
+    usage: "<red>Usage: /dt invite <player>"
+    not-in-dungeon: "<red>You must be in a dungeon to invite players."
+    not-owner: "<red>You are not the dungeon owner. Only {owner} can invite players."
+    target-offline: "<red>{target} is not online."
+    self: "<red>You cannot invite yourself."
+    target-has-session: "<red>{target} is already in a dungeon."
+    target-visiting: "<red>{target} is already visiting a dungeon."
+    target-already-in-region: "<red>{target} is already a member of {owner}'s dungeon."
+    sent: "<green>Invited {target} to your dungeon."
+    received: "<gold>{owner} invited you to their dungeon. <click:run_command:/dt visit {owner}><hover:show_text:'Click to join'><green>[JOIN]</green></hover></click> <click:run_command:/dt decline><hover:show_text:'Decline'><red>[DECLINE]</red></hover></click>"
+  visit:
+    usage: "<red>Usage: /dt visit <player>"
+    has-session: "<red>You have an active session. Use /dt exit first."
+    already-visiting: "<red>You are already visiting a dungeon."
+    target-offline: "<red>{target} is not online."
+    target-not-in-dungeon: "<red>{target} is not in a dungeon."
+    not-invited: "<red>You are not invited to {owner}'s dungeon."
+    full: "<red>{owner}'s dungeon is full (max {max})."
+    world-missing: "<red>Dungeon world is missing. Try again."
+    joined: "<green>Joined {owner}'s dungeon."
+    visitor-joined: "<yellow>{visitor} joined your dungeon."
+    visitor-left: "<yellow>{visitor} left your dungeon."
+  decline:
+    no-invite: "<red>You have no pending invite."
+    declined: "<yellow>Invite declined."
+    notified-owner: "<yellow>{visitor} declined your invite."
+  leave:
+    not-visiting: "<red>You are not visiting a dungeon."
+    left: "<yellow>You left the dungeon."
+  kick:
+    usage: "<red>Usage: /dt kick <visitor>"
+    not-in-dungeon: "<red>You must be in a dungeon to kick visitors."
+    not-owner: "<red>You are not the dungeon owner. Only {owner} can kick visitors."
+    target-offline: "<red>{target} is not online."
+    not-your-visitor: "<red>{target} is not in your dungeon."
+    kicked: "<green>Kicked {target} from your dungeon."
+    you-were-kicked: "<red>You were kicked from {owner}'s dungeon."
+    owner-ended-session: "<yellow>The dungeon owner ended the session. You have been teleported home."
+  stay:
+    not-owner: "<red>You are not the dungeon owner. Only {owner} can reset the kill count."
+  exit:
+    not-owner: "<red>You are not the dungeon owner. Only {owner} can exit the dungeon."
+  infinite:
+    not-awaiting: "<red>No infinite mode prompt is active."
+    not-owner: "<red>You are not the dungeon owner. Only {owner} can enter infinite mode."
+  end:
+    not-owner: "<red>You are not the dungeon owner. Only {owner} can end the dungeon."
+
+dungeon:
+  not-in-dungeon: "<red>You are not in a dungeon."
+  joined: "<green>Joined {owner}'s dungeon.</green>"
+  visitor-joined: "<yellow>{visitor} joined {owner}'s dungeon.</yellow>"
+  visitor-left: "<yellow>{visitor} left {owner}'s dungeon.</yellow>"
+  auto-joined: "<green>You have entered {owner}'s dungeon.</green>"
+  visitor-auto-joined: "<yellow>{visitor} has entered your dungeon!</yellow>"
+  full: "<red>{owner}'s dungeon is full (max {max}).</red>"
+  left: "<yellow>You left {owner}'s dungeon.</yellow>"
+  owner-died-broadcast: "<red>The dungeon owner {owner} has died. The dungeon is closed.</red>"
+  closed: "<red>{owner}'s dungeon is closed.</red>"
+  ended: "<yellow>The dungeon has ended.</yellow>"
+  creating: "<green>Creating your dungeon world..."
+  create-failed: "<red>Failed to create world."
+  building: "<green>Building arena..."
+  placing: "<green>Placing {structure}..."
+  placement-failed: "<red>Structure placement failed."
+  dispatch-failed: "<red>Failed to dispatch structure placement."
+  placement-timeout: "<red>Structure placement timed out."
+  finding-bed: "<green>Finding a bed..."
+  session-failed: "<red>Failed to start session."
+  started: "<green>Dungeon Trials started at Level {level}!"
+  started-hint: "<gray>Explore the {structure} and defeat mobs to advance."
+  exiting: "<yellow>Exiting dungeon..."
+  staying: "<yellow>Staying at Level {level}."
+  advanced: "<green>Advanced to Level {level}!"
+
+level-up:
+  prompt: "<gold>Reached {kills} kills! Advance to Level {next}?</gold> <click:run_command:/dt next {next}><hover:show_text:'Click to advance to Level {next}'><green>[YES]</green></hover></click> <click:run_command:/dt stay><hover:show_text:'Stay at current level'><red>[NO]</red></hover></click>"
+
+infinite:
+  prompt: "<gold>Reached {kills} kills! Level 5 cleared.</gold> <gray>Enter infinite mode?</gray> <click:run_command:/dt infinite><hover:show_text:'Continue indefinitely'><green>[YES]</green></hover></click> <click:run_command:/dt end><hover:show_text:'Stop spawning, stay in dungeon'><red>[NO]</red></hover></click>"
+  declined: "<yellow>Staying in the dungeon. No more mobs will spawn. Use /dt exit to leave."
+
+bossbar:
+  title: "<gold>Level {level}</gold> <gray>·</gray> <white>{kills}/{requirement}</white> <gray>Kills</gray>"
+
+stats:
+  header: "<gold>=== Your Stats ==="
+  empty: "<gray>No session history yet."
+  entry: "<white>Level {level} | {kills} kills | {duration}s | {reason}"
+  aggregate-line: "<white>Sessions:</white> <yellow>{sessions}</yellow>  <white>Best L:</white> <yellow>{max_lvl}</yellow>  <white>Kills:</white> <yellow>{kills}</yellow>  <white>Time:</white> <yellow>{duration}</yellow>\n<white>L5+ reached:</white> <yellow>{l5_count}</yellow> <gray>({l5_rate}%)</gray>"
+  aggregate-hint: "<gray>Use /dt stats structures for per-structure breakdown."
+  struct-header: "<gold>=== Per-Structure Stats ==="
+  struct-line: "<white>{structure}:</white> <yellow>{sessions}</yellow> <gray>sessions</gray> | <white>best L</white> <yellow>{max_lvl}</yellow> | <yellow>{kills}</yellow> <gray>kills</gray> | <yellow>{duration}</yellow>"
+  struct-empty: "<gray>No per-structure history yet."
+
+top:
+  header: "<gold>=== Top Players — {structure} (Top {limit}) ==="
+  line: "<yellow>#{rank}</yellow> <white>{name}</white> <gray>— L{max_lvl} | {kills} kills | {sessions} sessions</gray>"
+  empty: "<gray>No leaderboard data yet."
+
+help:
+  header: "<gold>=== Dungeon Trials ==="
+  start: "<yellow>/dt start [level] [structure]</yellow> <gray>- Start a dungeon (level 1-5; default structure if omitted)</gray>"
+  next: "<yellow>/dt next [level]</yellow> <gray>- Advance to a higher level; L5 with no arg jumps to L6 (infinite)</gray>"
+  stay: "<yellow>/dt stay</yellow> <gray>- Decline level-up; reset the kill count on the current level</gray>"
+  exit: "<yellow>/dt exit</yellow> <gray>- Leave your dungeon and teleport back to spawn</gray>"
+  stats: "<yellow>/dt stats [structures]</yellow> <gray>- Show your session stats (or per-structure breakdown)</gray>"
+  top: "<yellow>/dt top [structure] [limit]</yellow> <gray>- Show leaderboard (default top 10, max 50; default structure if omitted)</gray>"
+  invite: "<yellow>/dt invite <player></yellow> <gray>- Invite a player to join your dungeon</gray>"
+  visit: "<yellow>/dt visit <player></yellow> <gray>- Accept an invite and join that player's dungeon</gray>"
+  decline: "<yellow>/dt decline</yellow> <gray>- Decline a pending invite</gray>"
+  leave: "<yellow>/dt leave</yellow> <gray>- Leave the dungeon you are visiting</gray>"
+  kick: "<yellow>/dt kick <visitor></yellow> <gray>- Remove a visitor from your dungeon (owner only)</gray>"
+  infinite: "<yellow>/dt infinite</yellow> <gray>- Accept the L6 infinite-mode offer shown after clearing L5</gray>"
+  end: "<yellow>/dt end</yellow> <gray>- End your session (visitors are teleported home)</gray>"
+  help: "<yellow>/dt help</yellow> <gray>- Show this help</gray>"
+
+reload:
+  start: "<yellow>Reloading configuration..."
+  success: "<green>Configuration reloaded successfully."
+  failed: "<red>Failed to reload configuration."
+
+rewards:
+  inventory-full-dropped: "<yellow>Inventory full — {count} item(s) dropped on the ground."
+
+admin:
+  arena:
+    help: "<gray>/dt arena <list|info <id>|release <id|player>|cleanup-orphans>"
+    list:
+      header: "<gold>=== Active Arenas ({count}) ==="
+      empty: "<gray>No arenas in the database."
+      entry: "<white>{id}</white> <gray>|</gray> <white>{structure}</white> <gray>|</gray> <white>{owner}</white> <gray>|</gray> <white>{world}</white> <gray>|</gray> <yellow>{status}</yellow> <gray>|</gray> <gray>last: {last_used}</gray>"
+    info:
+      usage: "<red>Usage: /dt arena info <arenaId>"
+      header: "<gold>=== Arena: {id} ==="
+      not-found: "<red>Arena not found: {id}"
+      line: "<white>  {key}:</white> <yellow>{value}</yellow>"
+    release:
+      usage: "<red>Usage: /dt arena release <arenaId|player>"
+      not-found: "<red>Arena not found or already released: {target}"
+      released: "<green>Released arena {id}."
+      kicked-player: "<red>An admin released your arena. Teleporting you back..."
+    cleanup:
+      started: "<yellow>Running orphan cleanup..."
+      done: "<green>Cleaned up {count} orphan arena record(s)."
+  session:
+    help: "<gray>/dt session <list|end <player>>"
+    list:
+      header: "<gold>=== Active Sessions ({count}) ==="
+      empty: "<gray>No active sessions."
+      entry: "<white>{player}</white> <gray>|</gray> L<yellow>{level}</yellow> <gold>{infinite}</gold> <gray>|</gray> <white>{kills}</white> <gray>kills</gray> <gray>|</gray> <gray>{uptime_min}m</gray> <gray>|</gray> <white>{structure}</white> <gray>|</gray> <gray>{arena}</gray>"
+    end:
+      usage: "<red>Usage: /dt session end <player>"
+    target-offline: "<red>Player is not online: {target}"
+    target-not-in-dungeon: "<red>{target} is not in a dungeon."
+    ended: "<green>Force-ended {target}'s session."
+    ended-notice: "<red>Your session was force-ended by admin {admin}."

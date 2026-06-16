@@ -1,0 +1,132 @@
+missing: "<red>缺少訊息: {key}</red>"
+
+command:
+  player-only: "<red>只有玩家可以使用此指令。"
+  invalid-level: "<red>關卡必須介於 1 到 5 之間。"
+  invalid-number: "<red>無效的關卡編號。"
+  not-in-dungeon: "<red>你目前不在副本中。"
+  no-permission: "<red>你沒有權限使用此指令。"
+  visitor-warning: "<yellow>你正在別人的副本中,將建立自己的副本..."
+  unknown-structure: "<red>未知的副本類型: {structure}。可用: {available}。</red>"
+  start:
+    is-visiting: "<red>你正在拜訪別人的副本,請先使用 /dt leave 離開。</red>"
+    already-in-dungeon: "<red>你已在副本中,請使用 /dt next [關卡] 變更關卡。</red>"
+    already-in-region: "<red>你已是 {owner} 的副本成員,請先使用 /dt leave 離開。</red>"
+  next:
+    is-visiting: "<red>你正在拜訪別人的副本,請先使用 /dt leave 離開。</red>"
+    not-in-dungeon: "<red>你不在副本中,請先使用 /dt start [關卡]。</red>"
+    not-owner: "<red>你不是副本主人,只有 {owner} 可以變更關卡。</red>"
+    must-be-higher: "<red>關卡只能前進。當前關卡 {current}、下一關 {next}。</red>"
+  invite:
+    usage: "<red>用法: /dt invite <玩家>"</red>"
+    not-in-dungeon: "<red>你必須在副本中才能邀請玩家。"</red>"
+    not-owner: "<red>你不是副本主人，只有 {owner} 可以邀請玩家。</red>"
+    target-offline: "<red>{target} 不在線上。"
+    self: "<red>你不能邀請自己。"
+    target-has-session: "<red>{target} 已經在副本中了。"
+    target-visiting: "<red>{target} 正在拜訪其他副本。</red>"
+    target-already-in-region: "<red>{target} 已是 {owner} 的副本成員。</red>"
+    sent: "<green>已邀請 {target} 加入你的副本。"
+    received: "<gold>{owner} 邀請你加入他的副本。</gold> <click:run_command:/dt visit {owner}><hover:show_text:'點擊加入'><green>[加入]</green></hover></click> <click:run_command:/dt decline><hover:show_text:'拒絕邀請'><red>[拒絕]</red></hover></click>"
+  visit:
+    usage: "<red>用法: /dt visit <擁有者>"
+    has-session: "<red>你已有進行中的 session,請先使用 /dt exit 結束。"
+    already-visiting: "<red>你已經在拜訪其他副本了。"
+    target-offline: "<red>{target} 不在線上。"
+    target-not-in-dungeon: "<red>{target} 不在副本中。"
+    not-invited: "<red>你沒有被 {owner} 邀請。"
+    full: "<red>{owner} 的副本已滿(最多 {max} 人)。"
+    world-missing: "<red>副本世界不存在,請稍後再試。"
+    joined: "<green>已加入 {owner} 的副本。"
+    visitor-joined: "<yellow>{visitor} 加入了你的副本。"
+    visitor-left: "<yellow>{visitor} 離開了你的副本。"
+  decline:
+    no-invite: "<red>你目前沒有待處理的邀請。"
+    declined: "<yellow>已拒絕邀請。"
+    notified-owner: "<yellow>{visitor} 拒絕了你的邀請。"
+  leave:
+    not-visiting: "<red>你目前沒有在拜訪副本。"
+    left: "<yellow>你已離開副本。"
+  kick:
+    usage: "<red>用法: /dt kick <訪客>"</red>"
+    not-in-dungeon: "<red>你必須在副本中才能踢出訪客。</red>"
+    not-owner: "<red>你不是副本主人，只有副本主人可以踢人。</red>"
+    target-offline: "<red>{target} 不在線上。"
+    not-your-visitor: "<red>{target} 並不在你的副本中。"
+    kicked: "<green>已將 {target} 踢出你的副本。"
+    you-were-kicked: "<red>你已被踢出 {owner} 的副本。"
+    owner-ended-session: "<yellow>擁有者已結束副本,你已被傳送回原點。"
+  stay:
+    not-owner: "<red>你不是副本主人，只有 {owner} 可以重置殲敵數。</red>"
+  exit:
+    not-owner: "<red>你不是副本主人，只有 {owner} 可以退出副本。</red>"
+  end:
+    not-owner: "<red>你不是副本主人,只有 {owner} 可以結束副本。</red>"
+  infinite:
+    not-awaiting: "<red>目前沒有無限模式的提示。</red>"
+    not-owner: "<red>你不是副本主人，只有 {owner} 可以進入無限模式。</red>"
+
+dungeon:
+  not-in-dungeon: "<red>你目前不在副本中。</red>"
+  joined: "<green>已加入 {owner} 的副本。</green>"
+  visitor-joined: "<yellow>{visitor} 加入了 {owner} 的副本。</yellow>"
+  visitor-left: "<yellow>{visitor} 離開了 {owner} 的副本。</yellow>"
+  auto-joined: "<green>你已進入 {owner} 的副本。</green>"
+  visitor-auto-joined: "<yellow>{visitor} 進入了你的副本！</yellow>"
+  full: "<red>{owner} 的副本已滿(最多 {max} 人)。</red>"
+  left: "<yellow>你已離開 {owner} 的副本。</yellow>"
+  owner-died-broadcast: "<red>副本主人 {owner} 死亡,副本已關閉。</red>"
+  closed: "<red>{owner} 的副本已關閉。</red>"
+  ended: "<yellow>副本已結束。</yellow>"
+  creating: "<green>正在建立你的副本世界..."
+  create-failed: "<red>建立世界失敗。"
+  building: "<green>正在建造競技場..."
+  placing: "<green>正在放置 {structure}..."
+  placement-failed: "<red>結構放置失敗。"
+  dispatch-failed: "<red>無法執行結構放置指令。"
+  placement-timeout: "<red>結構放置逾時。"
+  finding-bed: "<green>正在搜尋床..."
+  session-failed: "<red>啟動 session 失敗。"
+  started: "<green>Dungeon Trials 已開始 — 關卡 {level}!"
+  started-hint: "<gray>探索 {structure},擊敗怪物以晉升下一關。"
+  exiting: "<yellow>正在離開副本..."
+  staying: "<yellow>停留在關卡 {level}。"
+  advanced: "<green>已晉升到關卡 {level}!"
+
+level-up:
+  prompt: "<gold>已擊殺 {kills} 隻!晉升到關卡 {next}?</gold> <click:run_command:/dt next {next}><hover:show_text:'點擊晉升到關卡 {next}'><green>[是]</green></hover></click> <click:run_command:/dt stay><hover:show_text:'停留在目前關卡'><red>[否]</red></hover></click>"
+
+infinite:
+  prompt: "<gold>已擊殺 {kills} 隻!關卡 5 已通關。</gold> <gray>是否進入無限模式?</gray> <click:run_command:/dt infinite><hover:show_text:'無限期繼續'><green>[是]</green></hover></click> <click:run_command:/dt end><hover:show_text:'停止生怪,留在副本中'><red>[否]</red></hover></click>"
+  declined: "<yellow>留在副本中,將不再生成怪物。使用 /dt exit 離開。"
+
+bossbar:
+  title: "<gold>關卡 {level}</gold> <gray>·</gray> <white>{kills}/{requirement}</white> <gray>擊殺</gray>"
+
+stats:
+  header: "<gold>=== 你的紀錄 ==="
+  empty: "<gray>尚無 session 紀錄。"
+  entry: "<white>關卡 {level} | 擊殺 {kills} 隻 | 持續 {duration} 秒 | 結束原因 {reason}"
+
+help:
+  header: "<gold>=== Dungeon Trials ==="
+  start: "<yellow>/dt start [關卡] [結構]</yellow> <gray>- 開始副本(關卡 1-5,省略時使用預設結構)</gray>"
+  next: "<yellow>/dt next [關卡]</yellow> <gray>- 推進到更高關卡;L5 不帶參數會跳到 L6(無盡模式)</gray>"
+  stay: "<yellow>/dt stay</yellow> <gray>- 拒絕升關,重置當前關卡的擊殺計數</gray>"
+  exit: "<yellow>/dt exit</yellow> <gray>- 離開副本,返回主世界出生點</gray>"
+  stats: "<yellow>/dt stats [structures]</yellow> <gray>- 顯示你的 session 統計(或各結構的細項)</gray>"
+  top: "<yellow>/dt top [結構] [數量]</yellow> <gray>- 顯示排行榜(預設前 10,最多 50;省略時使用預設結構)</gray>"
+  invite: "<yellow>/dt invite <玩家></yellow> <gray>- 邀請玩家加入你的副本</gray>"
+  visit: "<yellow>/dt visit <玩家></yellow> <gray>- 接受邀請,加入對方的副本</gray>"
+  decline: "<yellow>/dt decline</yellow> <gray>- 拒絕待處理的邀請</gray>"
+  leave: "<yellow>/dt leave</yellow> <gray>- 離開你正在拜訪的副本</gray>"
+  kick: "<yellow>/dt kick <訪客></yellow> <gray>- 將訪客踢出你的副本(僅副本主人)</gray>"
+  infinite: "<yellow>/dt infinite</yellow> <gray>- 接受 L5 通關後出現的 L6 無盡模式提示</gray>"
+  end: "<yellow>/dt end</yellow> <gray>- 結束你的 session(訪客會被送回主世界)</gray>"
+  reload: "<yellow>/dt reload</yellow> <gray>- 重新載入設定(管理員)</gray>"
+  help: "<yellow>/dt help</yellow> <gray>- 顯示此說明</gray>"
+
+reload:
+  start: "<yellow>正在重新載入設定..."
+  success: "<green>設定重新載入成功。"
+  failed: "<red>設定重新載入失敗。"

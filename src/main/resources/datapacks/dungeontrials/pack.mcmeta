@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "Dungeon Trials advancements",
+    "min_format": [
+      88,
+      0
+    ],
+    "max_format": [
+      101,
+      1
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "advancements.dungeontrials.root.title": "Dungeon Trials",
+  "advancements.dungeontrials.root.description": "Survive the trials and ascend.",
+  "advancements.dungeontrials.first_clear_l1.title": "First Trial Cleared",
+  "advancements.dungeontrials.first_clear_l1.description": "Cleared your first dungeon level.",
+  "advancements.dungeontrials.first_clear_l2.title": "Rising Challenger",
+  "advancements.dungeontrials.first_clear_l2.description": "Cleared dungeon level 2.",
+  "advancements.dungeontrials.first_clear_l3.title": "Trial Veteran",
+  "advancements.dungeontrials.first_clear_l3.description": "Cleared dungeon level 3.",
+  "advancements.dungeontrials.first_clear_l4.title": "Omen Bearer",
+  "advancements.dungeontrials.first_clear_l4.description": "Cleared dungeon level 4.",
+  "advancements.dungeontrials.first_clear_l5.title": "Trial Master",
+  "advancements.dungeontrials.first_clear_l5.description": "Cleared the final trial before infinity.",
+  "advancements.dungeontrials.first_clear_infinite.title": "Beyond Infinity",
+  "advancements.dungeontrials.first_clear_infinite.description": "Entered the infinite dungeon."
+}

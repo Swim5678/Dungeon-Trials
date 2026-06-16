@@ -1,0 +1,24 @@
+{
+  "parent": "dungeontrials:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_golden_apple"
+    },
+    "title": {
+      "translate": "advancements.dungeontrials.first_clear_infinite.title",
+      "fallback": "Beyond Infinity"
+    },
+    "description": {
+      "translate": "advancements.dungeontrials.first_clear_infinite.description",
+      "fallback": "Entered the infinite dungeon."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "clear_infinite": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

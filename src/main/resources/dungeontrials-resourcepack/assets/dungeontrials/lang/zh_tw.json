@@ -1,0 +1,16 @@
+{
+  "advancements.dungeontrials.root.title": "試煉之地",
+  "advancements.dungeontrials.root.description": "挑戰試煉,逐步突破。",
+  "advancements.dungeontrials.first_clear_l1.title": "首次試煉完成",
+  "advancements.dungeontrials.first_clear_l1.description": "已通過第一層試煉。",
+  "advancements.dungeontrials.first_clear_l2.title": "新銳挑戰者",
+  "advancements.dungeontrials.first_clear_l2.description": "已通過第二層試煉。",
+  "advancements.dungeontrials.first_clear_l3.title": "試煉老手",
+  "advancements.dungeontrials.first_clear_l3.description": "已通過第三層試煉。",
+  "advancements.dungeontrials.first_clear_l4.title": "厄運使者",
+  "advancements.dungeontrials.first_clear_l4.description": "已通過第四層試煉。",
+  "advancements.dungeontrials.first_clear_l5.title": "試煉宗師",
+  "advancements.dungeontrials.first_clear_l5.description": "已通過最終試煉,踏入無盡模式。",
+  "advancements.dungeontrials.first_clear_infinite.title": "超越無盡",
+  "advancements.dungeontrials.first_clear_infinite.description": "已進入無盡試煉模式。"
+}
